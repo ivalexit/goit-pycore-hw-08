@@ -230,11 +230,11 @@ def load_data(filename="addressbook.pkl"):
         with open(filename, "rb") as f:
             return pickle.load(f)
     except FileNotFoundError:
-        return AddressBook()  # Return a new address book if the file is not found 
+        return AddressBook()   # Return a new address book if the file is not found 
 
 # Main function
 def main():
-    book = load_data()  # Load address book at startup
+    book = load_data()   # Load address book at startup
     print("Welcome to the assistant bot!")
     while True:
         user_input = input("Menu:\n1- add\n2- change \n3- phone \n4- all \n5- remove\n6- add-birthday\n7- show-birthday\n8- birthdays\n9- exit or close\n10- hello\ncommand: ")
